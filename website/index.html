@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Insight</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="header-title">Weather Insight</h1>
+        <p class="header-subtitle"></p>
+      </header>
+
+      <main class="content">
+        <section class="form-wrapper">
+          <div class="form">
+            <label for="zipcode" class="form-label">ZIP Code</label>
+            <input id="zipcode" class="form-input" type="text" placeholder="Enter ZIP Code" />
+            <label for="feelings" class="form-label">Your Mood</label>
+            <textarea
+              id="feelings"
+              class="form-textarea"
+              placeholder="your feeling today?"
+            ></textarea>
+            <button id="submit" class="form-button">Get Weather</button>
+          </div>
+        </section>
+        <section class="result-wrapper">
+          <div class="result-card">
+            <h2 class="result-title">Date</h2>
+            <p id="date" class="result-value">-</p>
+          </div>
+          <div class="result-card">
+            <h2 class="result-title">Temperature</h2>
+            <p id="temperature" class="result-value">-</p>
+          </div>
+          <div class="result-card">
+            <h2 class="result-title">Mood</h2>
+            <p id="mood" class="result-value">-</p>
+          </div>
+        </section>
+        <footer>
+        <h1 class="footer">  Marah AbuKharma</h1>
+        </footer>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
